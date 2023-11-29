@@ -17,18 +17,20 @@ const HeaderDesktop = () => {
       </section>
 
       <section className="header__main">
-        <img
-          className="header__logo"
-          src={Logo}
-          alt="Maeztra"
-          width={147}
-          height={18}
-        />
-        <SearchBar />
-        <div className="header__links">
-          {headerMainLinks.map((link) => {
-            return <Link {...link} />;
-          })}
+        <div className="header__main-wrapper">
+          <img
+            className="header__logo"
+            src={Logo}
+            alt="Maeztra"
+            width={147}
+            height={18}
+          />
+          <SearchBar />
+          <div className="header__links">
+            {headerMainLinks.map((link) => {
+              return <Link {...link} />;
+            })}
+          </div>
         </div>
       </section>
 
@@ -47,26 +49,26 @@ const HeaderMobile = () => {
   return (
     <header>
       <section className="header__main">
-        <button className="header__openDrawer">
-          <img src={MenuDrawer} alt="Abrir Menu" width={24} height={24} />
-        </button>
-
-        <img
-          className="header__logo"
-          src={Logo}
-          alt="Maeztra"
-          width={110}
-          height={12}
-        />
-
-        <div className="header__right-icons">
-          <button>
-            <img src={IconSearch} alt="Busca" width={24} height={24} />
+        <div className="header__main-wrapper">
+          <button className="header__open-drawer">
+            <img src={MenuDrawer} alt="Abrir Menu" width={24} height={24} />
           </button>
+          <img
+            className="header__logo"
+            src={Logo}
+            alt="Maeztra"
+            width={110}
+            height={12}
+          />
+          <div className="header__right-icons">
+            <button>
+              <img src={IconSearch} alt="Busca" width={24} height={24} />
+            </button>
 
-          <button>
-            <img src={IconBag} alt="Sacola" width={21} height={24} />
-          </button>
+            <button>
+              <img src={IconBag} alt="Sacola" width={21} height={24} />
+            </button>
+          </div>
         </div>
       </section>
     </header>

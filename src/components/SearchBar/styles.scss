@@ -3,18 +3,12 @@
   max-width: 790px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  fieldset {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background-color: #efefef;
-    border-radius: 10px;
-    height: 40px;
-    padding-left: 24px;
-  }
+  background-color: #efefef;
+  border-radius: 10px;
+  height: 40px;
+  padding-left: 24px;
 
   input {
     width: 100%;
