@@ -1,5 +1,5 @@
+import { useEffect, useState } from "react";
 import "./styles.scss";
-
 import SearchBar from "../SearchBar";
 import Link from "../Link";
 import { headerMainLinks, headerMenus } from "./mocks";
@@ -10,13 +10,34 @@ import IconSearch from "../../assets/icon-busca.svg";
 import IconBag from "../../assets/icon-shoppingbag.svg";
 
 const HeaderDesktop = () => {
+  const [offScroll, setOffScroll] = useState(0);
+
+  useEffect(() => {
+    const onScrool = () => setOffScroll(window.scrollY);
+
+    window.removeEventListener("scroll", onScrool);
+    window.addEventListener("scroll", onScrool, { passive: true });
+
+    return () => window.removeEventListener("scroll", onScrool);
+  }, []);
+
   return (
     <header>
       <section className="header__top-bar">
         <p>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</p>
       </section>
 
-      <section className="header__main">
+      <section
+        className="header__main"
+        style={{
+          ...(offScroll > 0 && {
+            position: "fixed",
+            top: 0,
+            left: 0,
+            zIndex: 999,
+          }),
+        }}
+      >
         <div className="header__main-wrapper">
           <img
             className="header__logo"
@@ -25,30 +46,65 @@ const HeaderDesktop = () => {
             width={147}
             height={18}
           />
+
           <SearchBar />
-          <div className="header__links">
-            {headerMainLinks.map((link) => {
-              return <Link {...link} />;
+
+          <ul className="header__links">
+            {headerMainLinks.map((link, index) => {
+              return (
+                <li className="header__menu-item">
+                  <Link {...link} key={index} />
+                </li>
+              );
             })}
-          </div>
+          </ul>
         </div>
       </section>
 
       <section className="header__menu">
-        <div className="header__menu-wrapper">
-          {headerMenus.map((menu) => {
-            return <Link {...menu} />;
+        <ul className="header__menu-wrapper">
+          {headerMenus.map((menu, index) => {
+            return (
+              <li className="header__menu-item">
+                <Link {...menu} key={index} />
+              </li>
+            );
           })}
-        </div>
+        </ul>
       </section>
     </header>
   );
 };
 
 const HeaderMobile = () => {
+  const [offScroll, setOffScroll] = useState(0);
+
+  useEffect(() => {
+    const onScrool = () => setOffScroll(window.scrollY);
+
+    window.removeEventListener("scroll", onScrool);
+    window.addEventListener("scroll", onScrool, { passive: true });
+
+    return () => window.removeEventListener("scroll", onScrool);
+  }, []);
+
   return (
     <header>
-      <section className="header__main">
+      <section className="header__top-bar">
+        <p>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</p>
+      </section>
+
+      <section
+        className="header__main"
+        style={{
+          ...(offScroll > 0 && {
+            position: "fixed",
+            top: 0,
+            left: 0,
+            zIndex: 999,
+          }),
+        }}
+      >
         <div className="header__main-wrapper">
           <button className="header__open-drawer">
             <img src={MenuDrawer} alt="Abrir Menu" width={24} height={24} />

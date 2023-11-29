@@ -8,9 +8,15 @@ import NewsletterEmailIcon from "../../assets/newsletter-mail-icon.svg";
 
 const Modal = () => {
   const isMobile = useIsMobile();
-  const [isClosedModal, setIsClosedModal] = useState(false);
+  const hasOpenedModal = Boolean(
+    window?.sessionStorage.getItem("hasOpenedModal")
+  );
+  const [isClosedModal, setIsClosedModal] = useState(hasOpenedModal);
   const [emailInput, setEmailInput] = useState("");
-  const closeModal = () => setIsClosedModal(true);
+  const closeModal = () => {
+    setIsClosedModal(true);
+    window.sessionStorage.setItem("hasOpenedModal", "true");
+  };
 
   if (isClosedModal) {
     return null;

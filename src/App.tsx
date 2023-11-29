@@ -3,6 +3,7 @@ import "./App.css";
 import { HeaderDesktop, HeaderMobile } from "./components/Header";
 import useIsMobile from "./hooks/device";
 import Modal from "./components/Modal";
+import Home from "./pages/Home";
 
 function App() {
   const isMobile = useIsMobile();
@@ -11,6 +12,7 @@ function App() {
     <>
       <Modal />
       {isMobile ? <HeaderMobile /> : <HeaderDesktop />}
+      <Home />
     </>
   );
 }

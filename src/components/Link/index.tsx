@@ -9,8 +9,8 @@ const Link = ({ icon, border, anchor, label, highlight }: LinkProps) => {
   return (
     <div
       style={{ border }}
-      className={`header__menu-item ${
-        highlight ? "header__menu-item--highlight" : ""
+      className={`menu-item__wrapper ${
+        highlight ? "menu-item__wrapper--highlight" : ""
       }`}
     >
       <img {...icon} alt={icon?.alt} />
