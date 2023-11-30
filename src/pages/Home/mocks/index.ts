@@ -19,7 +19,7 @@ import Product2 from "../../../assets/product-2.jpg";
 interface Banner {
   src: string;
   mobileSrc?: string;
-  anchor: React.AnchorHTMLAttributes<HTMLAnchorElement>;
+  anchor: Anchor;
   alt: string;
 }
 
@@ -97,7 +97,7 @@ export const homeDeals: DealsProps = {
   ],
 };
 
-export const homeBrands: Array<React.ImgHTMLAttributes<HTMLImageElement>> = [
+export const homeBrands: Array<Image> = [
   {
     src: BransImage1,
     alt: "Marca",

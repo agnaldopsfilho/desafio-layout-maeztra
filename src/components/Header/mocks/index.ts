@@ -24,7 +24,7 @@ export const headerMainLinks: LinkProps[] = [
     icon: {
       src: IconBag,
     },
-    border: "1px solid #FAA500",
+    border: "1px solid var(--primary-color)",
     anchor: { href: "/" },
     label: "Meu Carrinho",
     highlight: true,

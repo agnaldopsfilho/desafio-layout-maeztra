@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 999;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);
@@ -22,7 +22,7 @@
 
   button {
     font-family: "Lato", sans-serif;
-    color: #fff;
+    color: var(--primary-light-color);
     font-size: 12px;
     line-height: 20px;
     text-transform: uppercase;
@@ -33,7 +33,7 @@
 .modal__content {
   display: flex;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--primary-light-color);
 }
 
 .modal__image {
@@ -94,16 +94,30 @@
   }
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     border-radius: 10px;
-    background-color: #faa500;
+    background-color: var(--primary-color);
     padding: 10px 12px;
 
-    color: #fff;
+    color: var(--primary-light-color);
     font-size: 12px;
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+
+    &::after {
+      display: block;
+      content: "";
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxNCAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjMxMjUgMC42NjQwNjJMMS41NjI1IDYuMjg5MDZDMC43NDIxODggNi43NTc4MSAwLjgxMjUgNy45NTMxMiAxLjY3OTY5IDguMzA0NjlMNC4zNzUgOS40MDYyNVYxMS4zNzVDNC4zNzUgMTIuNDc2NiA1Ljc1NzgxIDEyLjkyMTkgNi4zOTA2MiAxMi4wNTQ3TDcuNDIxODggMTAuNjcxOUwxMC4wNDY5IDExLjc1QzEwLjE4NzUgMTEuODIwMyAxMC4zMjgxIDExLjg0MzggMTAuNDY4OCAxMS44NDM4QzEwLjY1NjIgMTEuODQzOCAxMC44NDM4IDExLjc5NjkgMTEuMDMxMiAxMS43MDMxQzExLjMzNTkgMTEuNTE1NiAxMS41MjM0IDExLjIzNDQgMTEuNTkzOCAxMC44ODI4TDEyLjk3NjYgMS44MTI1QzEzLjExNzIgMC44NzUgMTIuMTA5NCAwLjE5NTMxMiAxMS4zMTI1IDAuNjY0MDYyWk01LjUgMTEuMzc1VjkuODc1TDYuMzQzNzUgMTAuMjI2Nkw1LjUgMTEuMzc1Wk0xMC40Njg4IDEwLjcxODhMNi44NTkzOCA5LjIxODc1TDEwLjE2NDEgNC40ODQzOEMxMC4zOTg0IDQuMTA5MzggOS45Mjk2OSAzLjY4NzUgOS42MDE1NiAzLjk5MjE5TDQuNjMyODEgOC4zMDQ2OUwyLjEyNSA3LjI1TDExLjg3NSAxLjYyNUwxMC40Njg4IDEwLjcxODhaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 14px;
+      height: 13px;
+      margin-left: 8px;
+    }
   }
 }
 

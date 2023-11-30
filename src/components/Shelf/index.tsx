@@ -39,9 +39,10 @@ const Shelf = ({ title, products }: ShelfProps) => {
 
   const sliderSettings: Settings = {
     slidesToShow: isMobile ? 1 : 5,
+    slidesToScroll: isMobile ? 1 : 5,
     vertical: false,
     lazyLoad: "ondemand",
-    arrows: true,
+    arrows: !isMobile,
     dots: false,
   };
 
@@ -51,17 +52,25 @@ const Shelf = ({ title, products }: ShelfProps) => {
 
       <Slider {...sliderSettings}>
         {products.map(
-          ({
-            image,
-            variations: { colors },
-            price,
-            name,
-            description,
-            productId,
-            productLink,
-          }) => {
+          (
+            {
+              image,
+              variations: { colors },
+              price,
+              name,
+              description,
+              productId,
+              productLink,
+            },
+            index
+          ) => {
             return (
-              <a id={productId} className="product" href={productLink}>
+              <a
+                id={productId}
+                className="product"
+                href={productLink}
+                key={index}
+              >
                 <img src={image} alt={name} loading="lazy" />
 
                 <div className="product__info">

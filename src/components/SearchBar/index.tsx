@@ -6,6 +6,7 @@ const SearchBar = () => {
 
   return (
     <form
+      id="search-bar__form"
       className="search-bar__form"
       onSubmit={(event) => {
         event.preventDefault();

@@ -13,6 +13,7 @@ const Modal = () => {
   );
   const [isClosedModal, setIsClosedModal] = useState(hasOpenedModal);
   const [emailInput, setEmailInput] = useState("");
+
   const closeModal = () => {
     setIsClosedModal(true);
     window.sessionStorage.setItem("hasOpenedModal", "true");
@@ -57,6 +58,7 @@ const Modal = () => {
               </h2>
 
               <form
+                id="modal__form"
                 className="modal__form"
                 onSubmit={(event) => {
                   event.preventDefault();

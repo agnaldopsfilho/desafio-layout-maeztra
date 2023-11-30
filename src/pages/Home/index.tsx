@@ -14,10 +14,15 @@ const Home = () => {
 
   const sliderSettings: Settings = {
     slidesToShow: 1,
+    slidesToScroll: 1,
     vertical: false,
     lazyLoad: "ondemand",
     arrows: true,
     dots: true,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 5000,
+    cssEase: "linear",
   };
 
   return (

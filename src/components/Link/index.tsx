@@ -1,10 +1,11 @@
 export interface LinkProps {
-  icon?: React.ImgHTMLAttributes<HTMLImageElement>;
+  icon?: Image;
   border?: React.CSSProperties["border"];
-  anchor: React.AnchorHTMLAttributes<HTMLAnchorElement>;
+  anchor: Anchor;
   label: string;
   highlight?: boolean;
 }
+
 const Link = ({ icon, border, anchor, label, highlight }: LinkProps) => {
   return (
     <div

@@ -1,16 +1,8 @@
 .shelf {
-  max-width: 1640px;
+  max-width: 1632px;
   margin: 0 auto;
-  padding: 0 20px 80px;
+  padding: 0 16px 80px;
   text-align: center;
-
-  .shelf__title {
-    color: #353535;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: normal;
-    margin: 0 auto 24px;
-  }
 
   .slick-track {
     display: flex;
@@ -28,10 +20,19 @@
   }
 }
 
+.shelf__title {
+  color: var(--second-color);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 auto 24px;
+}
+
 .product {
   display: flex !important;
   flex-direction: column;
   height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 4px;
 
   &:hover {
     filter: unset;
@@ -50,7 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 24px 8px;
+    padding: 10px 26px 8px;
     text-align: start;
   }
 
@@ -73,25 +74,25 @@
     }
 
     .color.selected {
-      border: 1px solid #353535;
+      border: 1px solid var(--second-color);
     }
   }
 
   .price {
-    color: #353535;
+    color: var(--second-color);
     font-size: 20px;
     font-weight: 700;
     margin: 8px 0 2px;
   }
 
   .name {
-    color: #000;
+    color: var(--primary-dark-color);
     font-size: 16px;
     margin: 0 0 8px;
   }
 
   .description {
-    color: #000;
+    color: var(--primary-dark-color);
     font-size: 12px;
     opacity: 0.9;
   }
@@ -99,16 +100,20 @@
   .add-to-cart {
     width: 100%;
     border-radius: 4px;
-    background: #faa500;
+    background: var(--primary-color);
     height: 34px;
 
-    color: #fff;
+    color: var(--primary-light-color);
     font-size: 16px;
   }
 }
 
 @media (min-width: 1026px) {
   .shelf {
+    .slick-list {
+      overflow: hidden;
+    }
+
     .slick-prev {
       left: 8px;
     }
@@ -117,7 +122,7 @@
       right: 8px;
     }
 
-    .slick-slide.slick-active {
+    .slick-slide {
       padding: 0 8px;
     }
   }
@@ -126,10 +131,16 @@
 @media (max-width: 1025px) {
   .shelf {
     max-width: 640px;
-    padding: 0 16px 24px;
+    padding: 0 30px 24px 16px;
+  }
 
-    .slick-list {
-      overflow: hidden;
-    }
+  .shelf__title {
+    font-size: 24px;
+    margin: 0 auto 20px;
+  }
+
+  .slick-slide {
+    padding-right: 14px;
+    // width: 87.2vw !important;
   }
 }

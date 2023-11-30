@@ -34,7 +34,7 @@ const HeaderDesktop = () => {
             position: "fixed",
             top: 0,
             left: 0,
-            zIndex: 999,
+            zIndex: 998,
           }),
         }}
       >
@@ -52,8 +52,8 @@ const HeaderDesktop = () => {
           <ul className="header__links">
             {headerMainLinks.map((link, index) => {
               return (
-                <li className="header__menu-item">
-                  <Link {...link} key={index} />
+                <li className="header__menu-item" key={index}>
+                  <Link {...link} />
                 </li>
               );
             })}
@@ -65,8 +65,8 @@ const HeaderDesktop = () => {
         <ul className="header__menu-wrapper">
           {headerMenus.map((menu, index) => {
             return (
-              <li className="header__menu-item">
-                <Link {...menu} key={index} />
+              <li className="header__menu-item" key={index}>
+                <Link {...menu} />
               </li>
             );
           })}
@@ -101,7 +101,7 @@ const HeaderMobile = () => {
             position: "fixed",
             top: 0,
             left: 0,
-            zIndex: 999,
+            zIndex: 998,
           }),
         }}
       >
