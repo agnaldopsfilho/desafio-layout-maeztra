@@ -25,7 +25,7 @@ O layout da aplicação está disponível no Figma:
 
 Feito deploy da aplicação no GitHub Pages:
 
-<>
+<https://agnaldopsfilho.github.io/desafio-layout-maeztra/>
 
 ---
 
@@ -65,7 +65,7 @@ $ yarn start
 
 ## 🛠 Tecnologias
 
-#### **Website**  ([React](https://reactjs.org/) + [Sass](https://sass-lang.com))
+#### **Website**  ([React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org)  + [Sass](https://sass-lang.com))
 
 #### **Alguns Componentes**  ([VTEX Styleguide](https://classic.yarnpkg.com/en/package/@vtex/styleguide))
 
