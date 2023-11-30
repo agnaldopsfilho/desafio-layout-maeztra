@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/desafio-layout-maeztra/static/css/main.2521d810.css",
+    "main.js": "/desafio-layout-maeztra/static/js/main.5772efb5.js",
+    "static/js/787.121167a6.chunk.js": "/desafio-layout-maeztra/static/js/787.121167a6.chunk.js",
+    "static/media/home-main-banner-desk.jpg": "/desafio-layout-maeztra/static/media/home-main-banner-desk.0d1343facd81026c6e06.jpg",
+    "static/media/seo-banner-desk.jpg": "/desafio-layout-maeztra/static/media/seo-banner-desk.fec34e987be789590b1a.jpg",
+    "static/media/banner-modal.png": "/desafio-layout-maeztra/static/media/banner-modal.753cf161ea7308b8aa3b.png",
+    "static/media/home-main-banner-mobile.jpg": "/desafio-layout-maeztra/static/media/home-main-banner-mobile.df473f8cbb431dc1c44c.jpg",
+    "static/media/product-2.jpg": "/desafio-layout-maeztra/static/media/product-2.ec9d29b3ce57c4dfad3e.jpg",
+    "static/media/product-1.jpg": "/desafio-layout-maeztra/static/media/product-1.870a3cfc292a7449eae7.jpg",
+    "static/media/seo-banner-mobile.jpg": "/desafio-layout-maeztra/static/media/seo-banner-mobile.59ca11e68273483d51dd.jpg",
+    "static/media/deals-3.svg": "/desafio-layout-maeztra/static/media/deals-3.9facf862ba964df7cfc13f1b39e4322c.svg",
+    "static/media/deals-1.svg": "/desafio-layout-maeztra/static/media/deals-1.f18ea7de57b57817ab391a2113c6b0dc.svg",
+    "static/media/deals-4.svg": "/desafio-layout-maeztra/static/media/deals-4.4c6247741dd5918f1775f2cf7933417e.svg",
+    "static/media/deals-5.svg": "/desafio-layout-maeztra/static/media/deals-5.961def0b8490b01eb2fbbbf696bad5f4.svg",
+    "static/media/deals-2.svg": "/desafio-layout-maeztra/static/media/deals-2.4670facd5d9b97d0210dedc0cd6ff1e9.svg",
+    "static/media/mastercard.svg": "/desafio-layout-maeztra/static/media/mastercard.98f0ac24485061c5c1ff037a83063851.svg",
+    "static/media/icon-dress.svg": "/desafio-layout-maeztra/static/media/icon-dress.c971147b18cf0b13ac331aad316fec54.svg",
+    "static/media/instagram.svg": "/desafio-layout-maeztra/static/media/instagram.8f5f736448c0fb26a630700649a48613.svg",
+    "static/media/visa.svg": "/desafio-layout-maeztra/static/media/visa.29c8072c239d23a14e403db7cff73329.svg",
+    "index.html": "/desafio-layout-maeztra/index.html",
+    "static/media/icon-shoppingbag.svg": "/desafio-layout-maeztra/static/media/icon-shoppingbag.9ad540188427f7ed6837ac2501acc207.svg",
+    "static/media/icon-menu.svg": "/desafio-layout-maeztra/static/media/icon-menu.780dd0485984d7f1c2479b634cc7195d.svg",
+    "static/media/icon-heart.svg": "/desafio-layout-maeztra/static/media/icon-heart.d52ecda33e897d3657d6bab298351fff.svg",
+    "static/media/icon-user.svg": "/desafio-layout-maeztra/static/media/icon-user.f7a3a28f18c1f680b5572e9a78d23717.svg",
+    "static/media/icon-busca.svg": "/desafio-layout-maeztra/static/media/icon-busca.1bf78542fb96e8dbd0995559b1373a10.svg",
+    "static/media/youtube.svg": "/desafio-layout-maeztra/static/media/youtube.a9768b50c6e827f77b052f13511799dd.svg",
+    "static/media/linkedin.svg": "/desafio-layout-maeztra/static/media/linkedin.33e7a284c717e55e6992f6fac65edde8.svg",
+    "static/media/facebook.svg": "/desafio-layout-maeztra/static/media/facebook.bed7d4f0aa0ceb0a54bc6f5ea4514b21.svg",
+    "static/media/newsletter-mail-icon.svg": "/desafio-layout-maeztra/static/media/newsletter-mail-icon.503bb4f47057b2cf5e19d572f774d86c.svg",
+    "main.2521d810.css.map": "/desafio-layout-maeztra/static/css/main.2521d810.css.map",
+    "main.5772efb5.js.map": "/desafio-layout-maeztra/static/js/main.5772efb5.js.map",
+    "787.121167a6.chunk.js.map": "/desafio-layout-maeztra/static/js/787.121167a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2521d810.css",
+    "static/js/main.5772efb5.js"
+  ]
+}
